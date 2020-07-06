@@ -14,8 +14,8 @@ export class PasswordLength extends React.Component {
           max={this.props.max}
           step="1"
           value={this.props.value}
-          onChange={event => {
-            this.props.onChange(event.target.value)
+          onChange={(event) => {
+            this.props.onChange(event.target.value);
           }}
         ></input>
       </div>

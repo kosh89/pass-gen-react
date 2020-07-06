@@ -36,8 +36,9 @@ export class OptionsItem extends React.Component {
           type="checkbox"
           id={this.props.type}
           className="params"
-
-          onChange={()=>{this.props.onChange(this.props.type)}}
+          onChange={() => {
+            this.props.onChange(this.props.type);
+          }}
         ></input>
 
         <label htmlFor={this.props.type}>{charsDescription}</label>
